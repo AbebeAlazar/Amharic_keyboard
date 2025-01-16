@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta property="og:image" content="../newproject/imag/favicon.png>
+    <title>የግዕዝ ፊደላት ኪይቦርድ | የቁልፍ ሰሌዳ • Online Amhari Keyboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon -->
+    <link rel="icon" type="imag/png" href="../newproject/imag/favicon.png">
+
+    <meta name="description"
+        content="ኦንላይን የግዕዝ ፊደላት ኪቦርድ (የኢትዮጵያ ቋንቋ) || Online keyboard to type en Amharic text with the Geez alphabet (Ethiopian language) ">
+    <!--  translate to amharic this description -->
+    <meta name="Keywords"
+        content="amharic,ethiopian,geez,keyboard,ethiopia,amharic keyboard online,geez keyboard online">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../newproject/css/style.css">
+</head>
+
+
+<body>
+    <form name="conversion" class="conversion">
+        <textarea onblur="bluerd(this.value)" spellcheck=" false" name="saisie" id="bar" value="" onkeyup="transcrire()"
+            class="cadr" placeholder="እዚህ ጻፍ"></textarea>
+        <span>
+            <button title="ገልብጥ" type="button" onclick="copyTexts()">
+                <i class="fa fa-copy" aria-hidden="true"></i>
+            </button>
+            <button title="ለጥፍ" type="button" onclick="pasteTexts()">
+                <i class="fa fa-paste" aria-hidden="true"></i>
+            </button>
+            <button title="ሁሉንም አጥፋ" type="button" onclick="clearTexts()">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </button>
+            <button title="ታሪክ" type="button" onclick="displayHistory()">
+                <i class="fa fa-clock" aria-hidden="true"></i>
+            </button>
+            <a class="info" rel="noopener" title="ሰለ እኔ" target="_blank" href="https://github.com/mintesnot-yess">
+
+                <i class="fa fa-info" aria-hidden="true"></i>
+            </a>
+
+        </span>
+    </form>
+
+    <div class="history-container">
+        <button onclick="hideHistory()" class="back" title="ተመለስ"> <i class="fa fa-angle-left">
+            </i>
+        </button>
+
+        <ul id="history">
+
+        </ul>
+
+        <button onclick="clearLocaldatas()" class="clea-all" title="ሁሉንም አጥፋ"><i class="fa fa-trash">
+            </i>
+        </button>
+
+    </div>
+
+
+    <script src="../newproject/js/script.js">
+    </script>
+
+
+</body>
+
+</html>
